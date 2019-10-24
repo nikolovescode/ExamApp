@@ -1,0 +1,17 @@
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\bin\Debug\netcoreapp2.1\NUnitTestProject.deps.json
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\bin\Debug\netcoreapp2.1\NUnitTestProject.runtimeconfig.json
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\bin\Debug\netcoreapp2.1\NUnitTestProject.runtimeconfig.dev.json
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\bin\Debug\netcoreapp2.1\NUnitTestProject.dll
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\bin\Debug\netcoreapp2.1\NUnitTestProject.pdb
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\bin\Debug\netcoreapp2.1\ExamApp.dll
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\bin\Debug\netcoreapp2.1\ExamApp.pdb
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\obj\Debug\netcoreapp2.1\NUnitTestProject.csprojAssemblyReference.cache
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\obj\Debug\netcoreapp2.1\NUnitTestProject.csproj.CoreCompileInputs.cache
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\obj\Debug\netcoreapp2.1\NUnitTestProject.AssemblyInfoInputs.cache
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\obj\Debug\netcoreapp2.1\NUnitTestProject.AssemblyInfo.cs
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\obj\Debug\netcoreapp2.1\NUnitTestProject.csproj.CopyComplete
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\obj\Debug\netcoreapp2.1\NUnitTestProject.dll
+C:\Users\nikol\source\repos\ExamApp\NUnitTestProject\obj\Debug\netcoreapp2.1\NUnitTestProject.pdb

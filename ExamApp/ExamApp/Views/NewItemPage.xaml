@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamApp.Views.NewItemPage"
+             Title="Nytt arbetspass">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Spara" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+
+        <StackLayout Spacing="20" Padding="15">
+            <Label x:Name="lblWorkshift" FontSize="Large"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   ></Label>
+            <Entry x:Name="entLengthOfWork"
+                FontSize="16"
+                   Placeholder="Hur många minuter vill du arbeta? Ex 25"/>
+
+            <Slider x:Name="HourSlider"
+                Minimum="0"
+                    Maximum="23"
+                    ValueChanged="HourSlider_ValueChanged"/>
+            <Slider x:Name="MinuteSlider"
+                Minimum="0"
+                    Maximum="59"
+                    ValueChanged="MinuteSlider_ValueChanged"/>
+            <Label x:Name="HourLabel"   
+                   FontSize="20"/>
+            <DatePicker MinimumDate="3/29/2019"
+                        DateSelected="DatePicker_DateSelected"
+                        />
+
+            <Switch HorizontalOptions="Center"
+                    Toggled="Switch_Toggled"/>
+            <Label x:Name="lblPriority"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

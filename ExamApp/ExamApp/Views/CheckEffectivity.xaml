@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamApp.Views.CheckEffectivity"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+    <ContentPage.Content>
+        <StackLayout Margin="12"
+             Padding="24"
+             Spacing="24"
+             BackgroundColor="White"
+             HorizontalOptions="Center"
+             VerticalOptions="Center">
+            <StackLayout>
+                <Label Text="Var passet effektivt?"
+                FontSize="16"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <Button x:Name="YesButton"
+            BackgroundColor="#e6adec"
+                FontSize="13"
+                Text="Ja"
+                TextColor="White"
+                Clicked="YesButton_Clicked" />
+            <Button x:Name="NoButton"
+            BackgroundColor="#e6adec"
+                FontSize="13"
+                Text="Nej"
+                TextColor="White"
+                Clicked="NoButton_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</pages:PopupPage>

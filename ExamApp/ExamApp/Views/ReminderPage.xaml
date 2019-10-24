@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamApp.Views.ReminderPage">
+    <ContentPage.Content>
+        <StackLayout Grid.Row="1" Margin="40,40,40,20">
+            <StackLayout>
+                <Label Text="Påminnelse timer"
+               FontSize="20"
+               HorizontalOptions="Center"
+               TextColor="Black"/>
+            </StackLayout>
+            <StackLayout>
+                <ProgressBar x:Name="MainProgressBar"
+                 
+                     ProgressColor="#efb9cb"
+                     Progress="0"
+                     WidthRequest="300"
+                     HeightRequest="20"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center"/>
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

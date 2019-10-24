@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamApp.Views.AddWorkNote"
+                                   xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+
+    <StackLayout Margin="12"
+             Padding="24"
+             Spacing="24"
+             BackgroundColor="White"
+             HorizontalOptions="Center"
+             VerticalOptions="Center">
+        <StackLayout>
+            <Entry x:Name="entWorkNote"
+                FontSize="16"
+                   Placeholder="Titel på anteckning"/>
+        </StackLayout>
+        <Button x:Name="AddButton"
+            BackgroundColor="#e6adec"
+                FontSize="13"
+                Text="Lägg till"
+                TextColor="White"
+                Clicked="AddButton_Clicked" />
+
+
+    </StackLayout>
+</pages:PopupPage>

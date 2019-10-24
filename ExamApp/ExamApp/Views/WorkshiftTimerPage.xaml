@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamApp.Views.WorkshiftTimerPage">
+    <ContentPage.Content>
+        <StackLayout Grid.Row="1" Margin="40,40,40,20">
+            <StackLayout>
+                <Label Text="Arbetspassets timer"
+               FontSize="20"
+               HorizontalOptions="Center"
+               TextColor="Black"/>
+            </StackLayout>
+            <StackLayout>
+                <ProgressBar x:Name="MainProgressBar"
+                 
+                     ProgressColor="#efb9cb"
+                     Progress="0"
+                     WidthRequest="300"
+                     HeightRequest="20"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center"/>
+                <Button x:Name="StopTimerButton" 
+                Margin="0,50,0,0" 
+                Text="Avsluta pass" Clicked="StopTimerButton_Clicked"
+                BackgroundColor="#e6adec"/>
+            </StackLayout>
+       </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

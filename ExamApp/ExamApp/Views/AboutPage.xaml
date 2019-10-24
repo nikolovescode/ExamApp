@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="ExamApp.Views.AboutPage"
+             xmlns:vm="clr-namespace:ExamApp.ViewModels"
+             Title="{Binding Title}">
+   
+    <StackLayout Grid.Row="1" Margin="40,0,40,0">
+        <Label Text="Kalender"
+                FontSize="20"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Spacing="20" Padding="15">
+            <DatePicker MinimumDate="3/29/2019"
+                        DateSelected="DatePicker_DateSelected"
+                        />
+            <Button x:Name="ViewWorkshiftButton"
+                Margin="0,50,0,0" 
+                Text="Se arbetspass" Clicked="ViewWorkshiftButton_Clicked"
+                BackgroundColor="#e6adec"/>
+            
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

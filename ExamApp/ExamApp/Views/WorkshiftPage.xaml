@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamApp.Views.WorkshiftPage">
+    <ContentPage.Content>
+
+            <ListView Margin="5" x:Name="LvTasks" HasUnevenRows="true"                 
+                      VerticalOptions="FillAndExpand"                  
+                      IsPullToRefreshEnabled="true"
+                      ItemSelected="LvTasks_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+
+                            <StackLayout Grid.Column="1" Margin="5,5,0,0">
+                                <Label Text="{Binding TitleWorkTask}"
+                                  FontSize="16"
+                                  VerticalOptions="CenterAndExpand" 
+                                  HorizontalOptions="CenterAndExpand"
+                                  LineBreakMode="NoWrap" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamApp.Views.WorkNotePage">
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="10">
+
+            <Button x:Name="AddNote" 
+                Margin="0,50,0,0" 
+                Text="Lägg till anteckning" 
+                BackgroundColor="#e6adec"
+                    Clicked="AddNote_Clicked"/>
+
+            <ListView Margin="5" x:Name="LvTasks" HasUnevenRows="true">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="1" Margin="5,5,0,0">
+                                    <Label Text="{Binding TitleWorkNote}" VerticalOptions="Center" FontSize="16" TextColor="Black" />
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

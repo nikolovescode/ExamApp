@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamApp.Views.WorkshiftDetailPage">
+    <ContentPage.Content>
+        <StackLayout Grid.Row="1" Margin="40,0,40,20">
+            <Label x:Name="lblTitleWorkTask"
+                FontSize="20"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>  
+            <Label x:Name="lblTimeToWork"/>
+            <Label x:Name="lblLengthOfWorkshift"/>
+            <Button x:Name="SetReminder" 
+                Margin="0,0,0,0" 
+                Text="Starta påminnelse" Clicked="SetReminder_Clicked"
+                BackgroundColor="#e6adec"/>
+            <Button x:Name="StartShift" 
+                Margin="0,0,0,0" 
+                Text="Starta arbetspass" Clicked="StartShift_Clicked"
+                BackgroundColor="#e6adec"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

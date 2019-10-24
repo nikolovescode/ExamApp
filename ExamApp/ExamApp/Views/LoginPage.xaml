@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamApp.Views.LoginPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="1" Margin="40,40,40,20">
+                <Entry Placeholder="Epost" x:Name="EntEmail"
+                       AutomationId="EntryEmail"/>
+                <Entry Placeholder="Lösenord" x:Name="EntPassword" 
+                       AutomationId="EntryPassword"
+                       IsPassword="true"/>
+                <Button Text="Logga in" BackgroundColor="#c287e8" x:Name="BtnLogin"
+                        AutomationId="ButtonLogin" Clicked="BtnLogin_OnClicked" />
+            </StackLayout>
+            <StackLayout Grid.Row="2" Padding="20" Orientation="Horizontal" HorizontalOptions="Center" >
+                <Label Text="Har du inget konto?" />
+                <StackLayout Spacing="0">
+                    <Label Text="Skaffa konto" FontAttributes="Bold" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapSignUp" NumberOfTapsRequired="1" Tapped="TapSignUp_OnTapped">
+
+                        </TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
